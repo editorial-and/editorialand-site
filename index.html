@@ -1,0 +1,790 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>株式会社エディトリアル・アンド | Editorial &amp; Inc.</title>
+  <meta name="description" content="編集・データ・AIの力で変革を伴走支援。株式会社エディトリアル・アンド">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300&family=Noto+Sans+JP:wght@300;400;500;600;700&family=Noto+Serif+JP:wght@400;600;700&family=Shippori+Mincho:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/hero.css">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              brown: '#4A3225',
+              orange: '#F19A4A',
+              coral: '#E85D4A',
+              warm: '#FFF9F5',
+            },
+            text: {
+              primary: '#1A1A1A',
+              secondary: '#4A4A4A',
+              tertiary: '#8A8A8A',
+            },
+            border: {
+              light: '#F0F0F0',
+              medium: '#E0E0E0',
+            }
+          },
+          fontFamily: {
+            sans: ['"Noto Sans JP"', 'sans-serif'],
+            serif: ['"Shippori Mincho"', '"Noto Serif JP"', 'serif'],
+          },
+        }
+      }
+    }
+  </script>
+  <style>
+    /* Tailwind config overrides only - all other styles in css/ */
+  </style>
+</head>
+<body class="antialiased leading-relaxed bg-white">
+
+  <!-- Background Decoration -->
+  <div class="bg-decoration">
+    <div class="blob blob-1"></div>
+    <div class="blob blob-2"></div>
+    <div class="blob blob-3"></div>
+  </div>
+
+  <!-- ===== Header ===== -->
+  <header class="fixed w-full top-0 z-50 header-transparent border-b border-border-light/50 transition-all duration-500">
+    <div class="container mx-auto px-6 flex justify-between items-center h-[72px]">
+      <a href="#" class="flex-shrink-0">
+        <img src="image/typography_touka.png" alt="株式会社エディトリアル・アンド" class="h-8 md:h-9 w-auto">
+      </a>
+      <nav class="hidden md:flex items-center space-x-7 text-[15px] font-medium">
+        <a href="#profile" class="nav-text text-text-primary hover:text-brand-orange transition-colors relative group">
+          メッセージ
+          <span class="absolute -bottom-1 left-0 w-0 h-0.5 bg-brand-orange transition-all group-hover:w-full"></span>
+        </a>
+        <a href="#services" class="nav-text text-text-primary hover:text-brand-orange transition-colors relative group">
+          サービス
+          <span class="absolute -bottom-1 left-0 w-0 h-0.5 bg-brand-orange transition-all group-hover:w-full"></span>
+        </a>
+        <a href="#achievements" class="nav-text text-text-primary hover:text-brand-orange transition-colors relative group">
+          実績
+          <span class="absolute -bottom-1 left-0 w-0 h-0.5 bg-brand-orange transition-all group-hover:w-full"></span>
+        </a>
+        <a href="#research" class="nav-text text-text-primary hover:text-brand-orange transition-colors relative group">
+          調査・研究
+          <span class="absolute -bottom-1 left-0 w-0 h-0.5 bg-brand-orange transition-all group-hover:w-full"></span>
+        </a>
+        <a href="#career" class="nav-text text-text-primary hover:text-brand-orange transition-colors relative group">
+          経歴
+          <span class="absolute -bottom-1 left-0 w-0 h-0.5 bg-brand-orange transition-all group-hover:w-full"></span>
+        </a>
+        <a href="https://forms.gle/nc3JF966YHNscRqu9" target="_blank" rel="noopener noreferrer" class="ml-2 px-6 py-2.5 bg-white/20 backdrop-blur-sm text-white border border-white/30 rounded-full hover:bg-brand-orange hover:border-brand-orange transition-all text-[15px]">
+          お問い合わせ
+        </a>
+      </nav>
+      <button class="md:hidden p-2" id="menuBtn" aria-label="メニューを開く">
+        <span class="block w-6 h-0.5 hamburger-bar bg-text-primary mb-1.5 transition-all" id="bar1"></span>
+        <span class="block w-6 h-0.5 hamburger-bar bg-text-primary mb-1.5 transition-all" id="bar2"></span>
+        <span class="block w-6 h-0.5 hamburger-bar bg-text-primary transition-all" id="bar3"></span>
+      </button>
+    </div>
+    <!-- Mobile nav -->
+    <div class="hidden md:hidden bg-white border-t border-border-light px-6 py-6 space-y-4" id="mobileNav">
+      <a href="#profile" class="block text-text-primary font-medium">メッセージ</a>
+      <a href="#services" class="block text-text-primary font-medium">サービス</a>
+      <a href="#achievements" class="block text-text-primary font-medium">実績</a>
+      <a href="#research" class="block text-text-primary font-medium">調査・研究</a>
+      <a href="#career" class="block text-text-primary font-medium">経歴</a>
+      <a href="https://forms.gle/nc3JF966YHNscRqu9" target="_blank" rel="noopener noreferrer" class="block text-center px-6 py-3 bg-text-primary text-white rounded-full font-medium">お問い合わせ</a>
+    </div>
+  </header>
+
+  <!-- ===== Hero ===== -->
+  <section class="hero" id="hero">
+    <div class="hero__bg">
+      <img src="image/haikei.jpg" alt="">
+    </div>
+    <div class="hero__overlay"></div>
+    <div class="hero__texture"></div>
+
+    <div class="hero__content">
+      <div class="hero__left">
+        <p class="hero__company">Editorial &amp; Inc.</p>
+        <p class="hero__subtitle">
+本質を見極め、<br>
+理論やファクトで整理し、<br>
+伝わる文脈に整える。<br>
+それが「編集」の力です。<br><br>
+新聞・出版・メディアで約20年、<br>
+記者・編集長・事業責任者として<br>
+この力を磨いてきました。<br><br>
+編集の力をデータ・AIで拡張し、<br>
+挑戦するリーダーの意思決定を支えます。<br>
+        </p>
+        <div class="hero__cta">
+          <a href="https://forms.gle/nc3JF966YHNscRqu9" target="_blank" rel="noopener noreferrer">ご相談はこちら</a>
+        </div>
+      </div>
+
+      <div class="hero__right">
+        <div class="hero__vertical">
+          <span class="hero__vertical-line1">編集・データ・<span class="tcy">AI</span>の力で、<br><span class="hero__vertical-line2">人と社会を前進させる。</span></span>
+        </div>
+      </div>
+    </div>
+
+    <div class="hero__deco-line"></div>
+  </section>
+
+  <!-- ===== Hero-to-Content Transition ===== -->
+  <div class="bg-[#1a1a1a] py-2 md:py-3"></div>
+
+  <main class="container mx-auto px-6 max-w-6xl">
+
+    <!-- ===== Message ===== -->
+    <section id="profile" class="py-10 md:py-16">
+      <p class="font-serif text-text-tertiary text-sm tracking-[0.2em] uppercase mb-2 reveal">Message</p>
+      <h2 class="font-serif section-heading text-2xl md:text-3xl font-bold text-text-primary mb-14 reveal">代表メッセージ</h2>
+      <div class="glass-panel rounded-2xl overflow-hidden shadow-md reveal">
+        <div class="md:flex">
+          <!-- Left: Photo -->
+          <div class="md:w-1/3 bg-gradient-to-br from-gray-50 to-brand-warm border-b md:border-b-0 md:border-r border-border-light flex flex-col">
+            <!-- Mobile: photo -->
+            <div class="md:hidden overflow-hidden profile-image-container">
+              <img src="image/profile_01.jpg" class="w-full object-cover object-[center_15%]" alt="小島健志" style="max-height: 400px;">
+            </div>
+            <!-- Desktop: full portrait -->
+            <div class="hidden md:flex flex-col h-full">
+              <div class="flex-1 overflow-hidden profile-image-container">
+                <img src="image/profile_01.jpg"
+                     class="w-full h-full object-cover object-top"
+                     alt="小島健志"
+                     style="min-height: 420px;">
+              </div>
+            </div>
+          </div>
+          <!-- Right: Story -->
+  <div class="md:w-2/3 p-8 md:p-10">
+            <h3 class="font-serif text-xl font-bold text-text-primary mb-5">「編集」の力をデータ・AIで拡張し、意思決定を支えたい</h3>
+            <div class="space-y-6 text-text-secondary text-[15px] leading-[1.9]">
+              <p>「記事が背中を押してくれた」<br>「あなたの言葉で、次のステージに踏み出せた」———。</p>
+              <p>記者・編集者として働く中で、何度となくいただいた言葉です。その人やその組織にしかない強みを見つけ、データ・理論と組み合わせ、伝えたい人にそのメッセージを届ける。何かを変えようと挑戦する人の背中を押して、社会がわずかにでも前に進む。その瞬間に立ち会えることこそが、私の原動力です。</p>
+              <p>私自身、伝統的な企業で変革の当事者を経験しました。現場の痛みも、変わることへの恐れも理解しています。理屈だけでは動かない現実があるからこそ、孤独なリーダーには、意思決定に寄り添う存在が必要です。</p>
+              <p>確かにAIは心強い"用心棒"になります。しかし、AIにできるのは、統計的に確率の高い選択肢をもっともらしく提示することです。それを信じて、本当に大事な判断を下せるのでしょうか。</p>
+              <p>人や組織を動かすのは、その人々にしか持ち得ない固有の言葉、文化、そして歴史です。その中から見つけ出した希少な表現こそが、不確実な時代を進む羅針盤となり、意思決定の支えとなります。</p>
+              <p>編集の力にデータとAIを掛け合わせて、コンテンツの可能性を引き出し、リーダーの意思決定を支えたい。それが私の伴走のあり方であり、<span class="text-brand-orange font-medium">Editorial &amp;</span> に込めた願いです。</p>
+            </div>
+            <p class="text-right text-text-primary font-serif font-bold text-base mt-8">代表 小島健志</p>
+
+            <!-- Core Values -->
+            <div class="mt-8 pt-6 border-t border-border-light">
+              <h4 class="text-xs font-bold text-text-tertiary mb-3 uppercase tracking-widest">Core Values</h4>
+              <div class="flex flex-wrap gap-3">
+                <span class="px-5 py-2 rounded-full bg-white border border-border-medium text-[15px] font-medium text-text-secondary shadow-sm">透明性 Transparency</span>
+                <span class="px-5 py-2 rounded-full bg-white border border-border-medium text-[15px] font-medium text-text-secondary shadow-sm">公平 Fairness</span>
+                <span class="px-5 py-2 rounded-full bg-white border border-border-medium text-[15px] font-medium text-text-secondary shadow-sm">真摯さ Integrity</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Services ===== -->
+    </main>
+    <div class="bg-[#1a1a1a] py-8 md:py-10 relative">
+      <div class="container mx-auto px-6 max-w-6xl text-center">
+        <p class="font-serif text-white/60 text-sm tracking-[0.2em] uppercase mb-3">Services</p>
+        <h2 class="font-serif text-2xl md:text-3xl font-bold text-white/90 mb-4">サービス</h2>
+        <p class="text-white/55 text-base max-w-2xl mx-auto leading-relaxed">
+          「編集」の力を活かした独自のサービスを提供します。
+        </p>
+        <!-- Orange horizontal line -->
+        <div class="mt-6 mx-auto w-16 h-[3px] bg-gradient-to-r from-transparent via-[#F19A4A] to-transparent"></div>
+      </div>
+    </div>
+    <main class="container mx-auto px-6 max-w-6xl">
+    <section id="services" class="py-10 md:py-16">
+
+      <!-- Target audience -->
+      <div class="bg-gradient-to-br from-brand-warm to-white rounded-2xl p-8 md:p-10 border border-brand-orange/15 mb-12 reveal">
+        <h3 class="font-serif text-lg font-bold text-text-primary mb-6 flex items-center gap-3">
+          <div class="w-10 h-10 rounded-full bg-brand-orange/10 flex items-center justify-center flex-shrink-0">
+            <svg class="w-5 h-5 text-brand-orange" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M15 19.128a9.38 9.38 0 002.625.372 9.337 9.337 0 004.121-.952 4.125 4.125 0 00-7.533-2.493M15 19.128v-.003c0-1.113-.285-2.16-.786-3.07M15 19.128v.106A12.318 12.318 0 018.624 21c-2.331 0-4.512-.645-6.374-1.766l-.001-.109a6.375 6.375 0 0111.964-3.07M12 6.375a3.375 3.375 0 11-6.75 0 3.375 3.375 0 016.75 0zm8.25 2.25a2.625 2.625 0 11-5.25 0 2.625 2.625 0 015.25 0z"/></svg>
+          </div>
+          こんな方に最適です
+        </h3>
+        <div class="grid sm:grid-cols-2 gap-4">
+          <div class="flex items-start gap-3">
+            <svg class="w-5 h-5 text-brand-orange flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg>
+            <p class="text-[15px] text-text-secondary">メディア・出版のDX推進に課題を感じている</p>
+          </div>
+          <div class="flex items-start gap-3">
+            <svg class="w-5 h-5 text-brand-orange flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"/></svg>
+            <p class="text-[15px] text-text-secondary">データ活用やAI導入を進めたいが進められる人が限られる</p>
+          </div>
+          <div class="flex items-start gap-3">
+            <svg class="w-5 h-5 text-brand-orange flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M7.5 8.25h9m-9 3H12m-9.75 1.51c0 1.6 1.123 2.994 2.707 3.227 1.087.16 2.185.283 3.293.369V21l4.076-4.076a1.526 1.526 0 011.037-.443 48.282 48.282 0 005.68-.494c1.584-.233 2.707-1.626 2.707-3.228V6.741c0-1.602-1.123-2.995-2.707-3.228A48.394 48.394 0 0012 3c-2.392 0-4.744.175-7.043.513C3.373 3.746 2.25 5.14 2.25 6.741v6.018z"/></svg>
+            <p class="text-[15px] text-text-secondary">戦略や方針の言語化に苦戦している</p>
+          </div>
+          <div class="flex items-start gap-3">
+            <svg class="w-5 h-5 text-brand-orange flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M19.5 14.25v-2.625a3.375 3.375 0 00-3.375-3.375h-1.5A1.125 1.125 0 0113.5 7.125v-1.5a3.375 3.375 0 00-3.375-3.375H8.25m0 12.75h7.5m-7.5 3H12M10.5 2.25H5.625c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125V11.25a9 9 0 00-9-9z"/></svg>
+            <p class="text-[15px] text-text-secondary">自社のコンテンツ資産を活かしきれていない</p>
+          </div>
+          <div class="flex items-start gap-3">
+            <svg class="w-5 h-5 text-brand-orange flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M12 18v-5.25m0 0a6.01 6.01 0 001.5-.189m-1.5.189a6.01 6.01 0 01-1.5-.189m3.75 7.478a12.06 12.06 0 01-4.5 0m3.75 2.383a14.406 14.406 0 01-3 0M14.25 18v-.192c0-.983.658-1.823 1.508-2.316a7.5 7.5 0 10-7.517 0c.85.493 1.509 1.333 1.509 2.316V18"/></svg>
+            <p class="text-[15px] text-text-secondary">記者や編集者がどのようなことを考えているのかを知りたい</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="space-y-8">
+        <!-- Service 1: DX -->
+        <div class="bg-white rounded-xl shadow-sm border border-border-light  transition-all duration-300 reveal">
+          <div class="flex flex-col md:flex-row">
+            <div class="md:w-1/3 p-7 md:p-8 md:border-r border-border-light flex flex-col justify-center">
+              <div class="w-12 h-12 rounded-xl bg-brand-orange flex items-center justify-center mb-5 shadow-sm">
+                <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="1.5">
+                  <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/>
+                </svg>
+              </div>
+              <h3 class="font-serif text-xl font-bold text-text-primary mb-1">Editorial &amp; DX</h3>
+              <p class="text-[15px] text-brand-orange font-medium leading-relaxed">メディア・出版業界に強みを持つ<br>DX伴走支援 + 人材育成</p>
+            </div>
+            <div class="md:w-2/3 p-7 md:p-8">
+              <div class="grid sm:grid-cols-2 gap-x-8 gap-y-3">
+                <div>
+                  <h4 class="text-xs font-bold text-text-tertiary uppercase tracking-widest mb-3">DX伴走支援</h4>
+                  <ul class="space-y-2.5 text-base text-text-secondary">
+                    <li class="flex items-start"><span class="text-brand-orange mr-2 mt-0.5 text-xs">&#9679;</span>DX戦略策定支援</li>
+                    <li class="flex items-start"><span class="text-brand-orange mr-2 mt-0.5 text-xs">&#9679;</span>データ活用支援</li>
+                    <li class="flex items-start"><span class="text-brand-orange mr-2 mt-0.5 text-xs">&#9679;</span>AIプロトタイプ、ガバナンス</li>
+                  </ul>
+                </div>
+                <div>
+                  <h4 class="text-xs font-bold text-text-tertiary uppercase tracking-widest mb-3 mt-4 sm:mt-0">人材育成・研修</h4>
+                  <ul class="space-y-2.5 text-base text-text-secondary">
+                    <li class="flex items-start"><span class="text-brand-orange mr-2 mt-0.5 text-xs">&#9679;</span>データリテラシー研修</li>
+                    <li class="flex items-start"><span class="text-brand-orange mr-2 mt-0.5 text-xs">&#9679;</span>AI活用研修</li>
+                    <li class="flex items-start"><span class="text-brand-orange mr-2 mt-0.5 text-xs">&#9679;</span>ライティング・編集力養成</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Service 2: Content -->
+        <div class="bg-white rounded-xl shadow-sm border border-border-light  transition-all duration-300 reveal">
+          <div class="flex flex-col md:flex-row">
+            <div class="md:w-1/3 p-7 md:p-8 md:border-r border-border-light flex flex-col justify-center">
+              <div class="w-12 h-12 rounded-xl bg-brand-brown flex items-center justify-center mb-5 shadow-sm">
+                <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="1.5">
+                  <path d="M12 20h9M16.5 3.5a2.121 2.121 0 013 3L7 19l-4 1 1-4L16.5 3.5z"/>
+                </svg>
+              </div>
+              <h3 class="font-serif text-xl font-bold text-text-primary mb-1">Editorial &amp; Content</h3>
+              <p class="text-[15px] text-brand-orange font-medium leading-relaxed">編集力を活かした<br>コンテンツプロデュース</p>
+            </div>
+            <div class="md:w-2/3 p-7 md:p-8">
+              <div class="grid sm:grid-cols-2 gap-x-8 gap-y-3">
+                <div>
+                  <h4 class="text-xs font-bold text-text-tertiary uppercase tracking-widest mb-3">コンテンツ制作</h4>
+                  <ul class="space-y-2.5 text-base text-text-secondary">
+                    <li class="flex items-start"><span class="text-brand-orange mr-2 mt-0.5 text-xs">&#9679;</span>ランキング系コンテンツの制作</li>
+                    <li class="flex items-start"><span class="text-brand-orange mr-2 mt-0.5 text-xs">&#9679;</span>冊子やホワイトペーパー等の制作</li>
+                    <li class="flex items-start"><span class="text-brand-orange mr-2 mt-0.5 text-xs">&#9679;</span>動画、音声コンテンツの制作</li>
+                    <li class="flex items-start"><span class="text-brand-orange mr-2 mt-0.5 text-xs">&#9679;</span>インタビュー記事の企画・執筆</li>
+                  </ul>
+                </div>
+                <div>
+                  <h4 class="text-xs font-bold text-text-tertiary uppercase tracking-widest mb-3 mt-4 sm:mt-0">プロデュース</h4>
+                  <ul class="space-y-2.5 text-base text-text-secondary">
+                    <li class="flex items-start"><span class="text-brand-orange mr-2 mt-0.5 text-xs">&#9679;</span>著者の価値向上施策立案</li>
+                    <li class="flex items-start"><span class="text-brand-orange mr-2 mt-0.5 text-xs">&#9679;</span>セミナー・ワークショップ開催支援</li>
+                    <li class="flex items-start"><span class="text-brand-orange mr-2 mt-0.5 text-xs">&#9679;</span>広報に関する相談</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Service 3: Strategy -->
+        <div class="bg-white rounded-xl shadow-sm border border-border-light  transition-all duration-300 reveal">
+          <div class="flex flex-col md:flex-row">
+            <div class="md:w-1/3 p-7 md:p-8 md:border-r border-border-light flex flex-col justify-center">
+              <div class="w-12 h-12 rounded-xl bg-brand-coral flex items-center justify-center mb-5 shadow-sm">
+                <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="1.5">
+                  <circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15.3 15.3 0 014 10 15.3 15.3 0 01-4 10 15.3 15.3 0 01-4-10 15.3 15.3 0 014-10z"/>
+                </svg>
+              </div>
+              <h3 class="font-serif text-xl font-bold text-text-primary mb-1">Editorial &amp; Strategy</h3>
+              <p class="text-[15px] text-brand-orange font-medium leading-relaxed">リーダー向けの戦略策定とコーチング<br>（トライアル中）</p>
+              <p class="text-sm text-text-tertiary italic mt-3"></p>
+            </div>
+            <div class="md:w-2/3 p-7 md:p-8">
+              <ul class="space-y-2.5 text-base text-text-secondary">
+                <li class="flex items-start"><span class="text-brand-orange mr-2 mt-0.5 text-xs">&#9679;</span>リーダーの言語化 &mdash; リーダーが自身の戦略やビジョンを「自分の言葉」で語れるようにするプログラム。ナレッジマネジメントやリブランディングに活用可。</li>
+                <li class="flex items-start"><span class="text-brand-orange mr-2 mt-0.5 text-xs">&#9679;</span>リーダーの発信プロジェクト &mdash; 経営方針や事業戦略をブログ、冊子、動画、音声、スライドなど多様な形式で社内外に伝える</li>
+                <li class="flex items-start"><span class="text-brand-orange mr-2 mt-0.5 text-xs">&#9679;</span>ビジネスコーチング &mdash; 定例のコーチングセッションを通じてその意思決定を支援</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+         <!-- Left: Strengths list -->
+          <div>
+            <p class="font-serif text-text-tertiary text-sm tracking-[0.2em] uppercase mb-2">Strengths</p>
+            <h2 class="font-serif section-heading text-2xl md:text-3xl font-bold text-text-primary mb-10">強み</h2>
+            <div class="space-y-6 mt-4">
+              <div class="flex items-start group">
+                <div class="flex-shrink-0 w-10 h-10 rounded-full border-2 border-text-primary flex items-center justify-center text-text-primary font-serif font-bold mt-0.5 group-hover:bg-text-primary group-hover:text-white transition-all">1</div>
+                <div class="ml-5">
+                  <h4 class="font-bold text-text-primary mb-1">現場を知っている者として</h4>
+                  <p class="text-text-secondary text-[15px]">新聞、雑誌、オンラインメディア、事業部門と、約20年間メディアの現場に立ってきました。少なくともメディア領域については、その現場の空気を知っているため、一般コンサルタントとは異なる実行可能な提案ができます。</p>
+                </div>
+              </div>
+              <div class="flex items-start group">
+                <div class="flex-shrink-0 w-10 h-10 rounded-full border-2 border-text-primary flex items-center justify-center text-text-primary font-serif font-bold mt-0.5 group-hover:bg-text-primary group-hover:text-white transition-all">2</div>
+                <div class="ml-5">
+                  <h4 class="font-bold text-text-primary mb-1">「翻訳者」として</h4>
+                  <p class="text-text-secondary text-[15px]">一般のコンサルタントはフレームワークで整理し、ツールで解決しようとします。しかし現場が求めているのは、その両方を「自分たちの言葉」に翻訳してくれる存在です。データサイエンスの知見と、ビジネス・マネジメント領域の編集者・記者としての力を併せ持つからこそ、専門家と現場との間に立つことができます。</p>
+                </div>
+              </div>
+              <div class="flex items-start group">
+                <div class="flex-shrink-0 w-10 h-10 rounded-full border-2 border-text-primary flex items-center justify-center text-text-primary font-serif font-bold mt-0.5 group-hover:bg-text-primary group-hover:text-white transition-all">3</div>
+                <div class="ml-5">
+                  <h4 class="font-bold text-text-primary mb-1">伴走者として</h4>
+                  <p class="text-text-secondary text-[15px]">DX推進の現場では、経営層・事業/クリエイティブ部門・技術部門の間で言葉が通じないことが最大の壁です。変革の実現には、部門間をつなぎ、組織の「共通言語」をつくること。その役割を担う孤独なDX推進者を支えることが欠かせません。</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Achievements ===== -->
+    <section id="achievements" class="py-10 md:py-16">
+      <p class="font-serif text-text-tertiary text-sm tracking-[0.2em] uppercase mb-2 reveal">Achievements</p>
+      <h2 class="font-serif section-heading text-2xl md:text-3xl font-bold text-text-primary mb-14 reveal">実績</h2>
+
+      <!-- Achievement Card (single column) -->
+      <div class="bg-white p-7 md:p-9 rounded-xl shadow-sm border border-border-light reveal">
+        <div class="w-12 h-12 rounded-full bg-brand-orange/10 flex items-center justify-center mb-5">
+          <svg class="w-6 h-6 text-brand-orange" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="1.5"><path d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z"/></svg>
+        </div>
+
+        <!-- 取材・編集実績 -->
+        <div class="mb-8">
+          <h3 class="font-serif text-lg font-bold text-text-primary mb-3">コンテンツ・テック・ビジネス</h3>
+          <p class="text-[15px] text-text-secondary mb-4">約20年にわたり、テクノロジーとビジネス・マネジメント領域を中心に取材・発信を行ってきました。またメディア事業においても、その知見を活かして多数の取り組みをしてきました。</p>
+          <div class="grid sm:grid-cols-2 gap-x-6 gap-y-2 text-[14px] text-text-secondary">
+            <div class="flex items-start gap-2"><span class="text-brand-orange mt-0.5">&#9679;</span><span>DHBR編集長・事業責任者として事業構造の転換を実現</span></div>
+            <div class="flex items-start gap-2"><span class="text-brand-orange mt-0.5">&#9679;</span><span>デジタルサブスク事業の立ち上げ</span></div>
+            <div class="flex items-start gap-2"><span class="text-brand-orange mt-0.5">&#9679;</span><span>データ分析を活かした企画で100万PV超の記事に寄与</span></div>
+            <div class="flex items-start gap-2"><span class="text-brand-orange mt-0.5">&#9679;</span><span>独自ランキング企画を立案、人気シリーズに成長</span></div>
+            <div class="flex items-start gap-2"><span class="text-brand-orange mt-0.5">&#9679;</span><span>HBR100周年記念セミナー（過去最大規模の集客）</span></div>
+            <div class="flex items-start gap-2"><span class="text-brand-orange mt-0.5">&#9679;</span><span>ポッドキャスト・AI動画コンテンツの制作</span></div>
+            <div class="flex items-start gap-2"><span class="text-brand-orange mt-0.5">&#9679;</span><span>全社AI活用推進の勉強会・プロトタイプ制作</span></div>
+          </div>
+        </div>
+        <!-- コミュニティ運営 -->
+        <div class="mb-8 pt-6 border-t border-border-light">
+          <h3 class="font-serif text-lg font-bold text-text-primary mb-3">コミュニティ運営</h3>
+          <p class="text-[15px] text-text-secondary">入山章栄著『世界標準の経営理論』に関連する社団法人を設立、その運営に携わっており、書籍を通じたコミュニティの可能性を追求しています。</p>
+          <a href="https://mtgs88.jp/" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1.5 text-brand-orange hover:text-brand-coral text-[13px] font-medium mt-2 transition-colors">
+            団体のホームページを見る
+            <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/></svg>
+          </a>
+        </div>
+
+        <!-- 著書 -->
+        <div class="pt-6 border-t border-border-light mb-6">
+          <h3 class="font-serif text-lg font-bold text-text-primary mb-3">著書</h3>
+          <div class="flex items-start gap-4">
+            <div class="w-24 flex-shrink-0">
+              <img src="image/syoei.jpg" alt="ブロックチェーン、AIで先を行くエストニアで見つけた つまらなくない未来" class="w-full rounded-lg shadow-md">
+            </div>
+            <div>
+              <h5 class="font-bold text-text-primary text-[15px] mb-1">ブロックチェーン、AIで先を行くエストニアで見つけた つまらなくない未来</h5>
+              <p class="text-[13px] text-text-tertiary mb-2">2018年 ダイヤモンド社</p>
+              <p class="text-[14px] text-text-secondary leading-relaxed">「ハンコのない」電子政府国家エストニアの取材から、日本社会が必要な国家・社会・教育システムを描く。孫泰蔵氏監修。</p>
+              <a href="https://www.amazon.co.jp/dp/4478106207" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1.5 text-brand-orange hover:text-brand-coral text-[13px] font-medium mt-2 transition-colors">
+                Amazon で見る
+                <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/></svg>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Interview list accordion -->
+        <div class="pt-6 border-t border-border-light">
+          <details class="group rounded-xl border-2 border-brand-orange/20 overflow-hidden shadow-sm">
+            <summary class="flex items-center justify-between cursor-pointer px-6 py-5 bg-brand-warm hover:bg-brand-orange/10 transition-colors">
+              <div class="flex items-center gap-3">
+                <div class="w-8 h-8 rounded-full bg-brand-orange/15 flex items-center justify-center flex-shrink-0">
+                  <svg class="w-4 h-4 text-brand-orange" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M12 20.25c4.97 0 9-3.694 9-8.25s-4.03-8.25-9-8.25S3 7.444 3 12c0 2.104.859 4.023 2.273 5.48.432.447.74 1.04.586 1.641a4.483 4.483 0 01-.923 1.785A5.969 5.969 0 006 21c1.282 0 2.47-.402 3.445-1.087.81.22 1.668.337 2.555.337z"/></svg>
+                </div>
+                <span class="text-[15px] font-bold text-text-primary">主な単独インタビュー実績一覧（対談企画、担当連載含む）</span>
+              </div>
+              <svg class="w-5 h-5 text-brand-orange flex-shrink-0 ml-3 transition-transform group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg>
+            </summary>
+            <div class="px-5 py-5 text-[14px] text-text-secondary leading-relaxed space-y-5">
+              <p class="text-[13px] text-text-tertiary">週刊ダイヤモンド/DHBR編集部時代の主要インタビュー・対談・連載実績 <br>（敬称略・五十音順）</p>
+              <!-- 経営者・起業家 -->
+              <div>
+                <h5 class="text-[13px] font-bold text-text-tertiary uppercase tracking-widest mb-2">経営者・起業家</h5>
+                <p>石橋博良（ウェザーニューズ創業者）、鵜浦博夫（NTT元社長）、川上量生（ドワンゴ創業者）、孫泰蔵（連載「孫家の教え」担当）、孫正義（ソフトバンクグループ創業者）、高橋誠（KDDI会長）、永守重信（ニデック創業者）、新浪剛史（サントリーホールディングス社長）、服部真二（セイコーグループ会長）、東原敏昭（日立グループ元社長）、平井一夫（ソニー元社長）、堀江貴文（連載「ホリエモン的常識」担当）、三木谷浩史（楽天グループ創業者）、南壮一郎（ビズリーチ創業者）、柳井正（ファーストリテイリング代表取締役会長兼社長）、リード・ホフマン（LinkedIn創業者）</p>
+              </div>
+              <!-- 学者・研究者 -->
+              <div>
+                <h5 class="text-[13px] font-bold text-text-tertiary uppercase tracking-widest mb-2">学者・研究者</h5>
+                <p>安宅和人（慶應義塾大学教授）、入山章栄（早稲田大学ビジネススクール教授）、ジェフリー・ムーア（『キャズム』著者）、ジョン・コッター（ハーバード・ビジネス・スクール名誉教授）、スティーブ・ブランク（スタンフォード大学教授）、竹内弘高（元ハーバード・ビジネス・スクール教授）、トマ・ピケティ（経済学者）、名和高司（一橋大学ビジネススクール教授）、野中郁次郎（一橋大学名誉教授）、松尾豊（東京大学教授）、リンダ・グラットン（ロンドン・ビジネス・スクール教授）</p>
+              </div>
+              <!-- 政治・行政・クリエイター -->
+              <div>
+                <h5 class="text-[13px] font-bold text-text-tertiary uppercase tracking-widest mb-2">政治・行政・クリエイター</h5>
+                <p>庵野秀明（スタジオカラー代表）、ケルスティ・カリユライド（第5代エストニア大統領）、新海誠（アニメーション監督）、ジョン・マスカー＆ロン・クレメンツ（『モアナと伝説の海』監督）、富野由悠季（アニメーション監督）、羽生善治（将棋棋士）、宮坂学（東京都副知事、元ヤフー社長）、渡辺和子（シスター）</p>
+              </div>
+            </div>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== R&D ===== -->
+    <section id="research" class="pt-0 pb-10 md:pt-0 md:pb-16">
+      <p class="font-serif text-text-tertiary text-sm tracking-[0.2em] uppercase mb-2 reveal">R&amp;D</p>
+      <h2 class="font-serif section-heading text-2xl md:text-3xl font-bold text-text-primary mb-14 reveal">調査・研究</h2>
+
+      <div class="space-y-6">
+
+        <!-- 01: 上智大学大学院研究 (Featured) -->
+        <div class="bg-white rounded-xl shadow-sm border border-border-light overflow-hidden">
+          <div class="p-7 md:p-8">
+            <div class="flex flex-wrap items-center gap-3 mb-4">
+              <span class="inline-flex items-center justify-center w-9 h-9 rounded-full bg-text-primary text-white text-sm font-bold">01</span>
+              <span class="px-3 py-1 rounded-full bg-gray-100 text-text-secondary text-xs font-bold tracking-wide">研究</span>
+              <span class="text-[13px] text-text-tertiary">2024.10 &mdash; 2026.01</span>
+            </div>
+            <h4 class="font-serif text-lg font-bold text-text-primary mb-2">上智大学大学院での主な研究・発表</h4>
+            <p class="text-[15px] text-text-secondary mb-6">上智大学大学院応用データサイエンス学位プログラムにて取り組んだ研究・発表の一例です（推薦システム、画像分類、因果推論、衛星データ分析、ピープルアナリティクス等）。</p>
+            <div class="space-y-0 divide-y divide-border-light">
+              <a href="pdf/sohipa1-1.pdf" target="_blank" rel="noopener noreferrer" class="flex items-start gap-3 py-4 first:pt-0 group">
+                <svg class="w-5 h-5 text-brand-orange flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="1.5"><path d="M19.5 14.25v-2.625a3.375 3.375 0 00-3.375-3.375h-1.5A1.125 1.125 0 0113.5 7.125v-1.5a3.375 3.375 0 00-3.375-3.375H8.25m2.25 0H5.625c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125V11.25a9 9 0 00-9-9z"/></svg>
+                <div>
+                  <p class="text-[15px] font-medium text-text-primary group-hover:text-brand-orange transition-colors">Co-CoLM: Context-aware Collaborative Language Model<br>—協調情報とコンテキスト情報の統合による推薦精度の向上—</p>
+                  <p class="text-[13px] text-text-tertiary mt-0.5">言語モデルに協調情報とコンテキスト情報を加えることでレコメンドアルゴリズムの精度向上を実現</p>
+                </div>
+              </a>
+              <a href="pdf/sophia1-2.pdf" target="_blank" rel="noopener noreferrer" class="flex items-start gap-3 py-4 group">
+                <svg class="w-5 h-5 text-brand-orange flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="1.5"><path d="M19.5 14.25v-2.625a3.375 3.375 0 00-3.375-3.375h-1.5A1.125 1.125 0 0113.5 7.125v-1.5a3.375 3.375 0 00-3.375-3.375H8.25m2.25 0H5.625c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125V11.25a9 9 0 00-9-9z"/></svg>
+                <div>
+                  <p class="text-[15px] font-medium text-text-primary group-hover:text-brand-orange transition-colors">乳児の表情や仕草からその感情はわかるのか？</p>
+                  <p class="text-[13px] text-text-tertiary mt-0.5">Vision Transformerを用いた乳幼児の画像分類システム</p>
+                </div>
+              </a>
+              <a href="pdf/sophia1-3.pdf" target="_blank" rel="noopener noreferrer" class="flex items-start gap-3 py-4 group">
+                <svg class="w-5 h-5 text-brand-orange flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="1.5"><path d="M19.5 14.25v-2.625a3.375 3.375 0 00-3.375-3.375h-1.5A1.125 1.125 0 0113.5 7.125v-1.5a3.375 3.375 0 00-3.375-3.375H8.25m2.25 0H5.625c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125V11.25a9 9 0 00-9-9z"/></svg>
+                <div>
+                  <p class="text-[15px] font-medium text-text-primary group-hover:text-brand-orange transition-colors">ふるさと納税で"故郷"は豊かになったか</p>
+                  <p class="text-[13px] text-text-tertiary mt-0.5">固定効果モデルを用いたパネルデータ分析</p>
+                </div>
+              </a>
+              <a href="pdf/sophia1-4.pdf" target="_blank" rel="noopener noreferrer" class="flex items-start gap-3 py-4 group">
+                <svg class="w-5 h-5 text-brand-orange flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="1.5"><path d="M19.5 14.25v-2.625a3.375 3.375 0 00-3.375-3.375h-1.5A1.125 1.125 0 0113.5 7.125v-1.5a3.375 3.375 0 00-3.375-3.375H8.25m2.25 0H5.625c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125V11.25a9 9 0 00-9-9z"/></svg>
+                <div>
+                  <p class="text-[15px] font-medium text-text-primary group-hover:text-brand-orange transition-colors">スマホの長時間利用は子どもの学力を下げるのか</p>
+                  <p class="text-[13px] text-text-tertiary mt-0.5">二元配置固定効果推定法を用いたパネルデータ分析</p>
+                </div>
+              </a>
+              <a href="pdf/sophia1-5.pdf" target="_blank" rel="noopener noreferrer" class="flex items-start gap-3 py-4 group">
+                <svg class="w-5 h-5 text-brand-orange flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="1.5"><path d="M19.5 14.25v-2.625a3.375 3.375 0 00-3.375-3.375h-1.5A1.125 1.125 0 0113.5 7.125v-1.5a3.375 3.375 0 00-3.375-3.375H8.25m2.25 0H5.625c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125V11.25a9 9 0 00-9-9z"/></svg>
+                <div>
+                  <p class="text-[15px] font-medium text-text-primary group-hover:text-brand-orange transition-colors">衛星SSTデータで見るイカ漁場変動</p>
+                  <p class="text-[13px] text-text-tertiary mt-0.5">局所的SSTと広域海流パターンの比較分析</p>
+                </div>
+              </a>
+              <div class="flex items-start gap-3 py-4">
+                <svg class="w-5 h-5 text-text-tertiary flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="1.5"><path d="M19.5 14.25v-2.625a3.375 3.375 0 00-3.375-3.375h-1.5A1.125 1.125 0 0113.5 7.125v-1.5a3.375 3.375 0 00-3.375-3.375H8.25m2.25 0H5.625c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125V11.25a9 9 0 00-9-9z"/></svg>
+                <div>
+                  <p class="text-[15px] font-medium text-text-primary">ピープルアナリティクス</p>
+                  <p class="text-[13px] text-text-tertiary mt-0.5">大手システム会社の職場の口コミ約4000件から人事施策の妥当性を検討</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 02: 七夕動画 (Featured) -->
+        <div class="bg-white rounded-xl shadow-sm border border-border-light overflow-hidden">
+          <div class="p-7 md:p-8">
+            <div class="flex flex-wrap items-center gap-3 mb-4">
+              <span class="inline-flex items-center justify-center w-9 h-9 rounded-full bg-text-primary text-white text-sm font-bold">02</span>
+              <span class="px-3 py-1 rounded-full bg-gray-100 text-text-secondary text-xs font-bold tracking-wide">動画</span>
+              <span class="text-[13px] text-text-tertiary">2025.07</span>
+            </div>
+            <h4 class="font-serif text-lg font-bold text-text-primary mb-2">「七夕」：生成AIを用いた動画制作</h4>
+            <p class="text-[15px] text-text-secondary mb-6">Google FLOW、Midjourney、Sunoを用いた映像表現への挑戦。編集も行う。</p>
+          </div>
+          <div class="px-7 md:px-8 pb-7 md:pb-8">
+            <div class="max-w-3xl mx-auto">
+              <a href="https://www.youtube.com/watch?v=x4Kg-uwPqKk" target="_blank" rel="noopener noreferrer" class="block rounded-xl overflow-hidden relative group">
+                <img src="https://img.youtube.com/vi/x4Kg-uwPqKk/maxresdefault.jpg" alt="「七夕」：生成AIを用いた動画制作" class="w-full aspect-video object-cover">
+                <div class="absolute inset-0 bg-black/30 group-hover:bg-black/40 transition-colors flex items-center justify-center">
+                  <div class="w-16 h-16 md:w-20 md:h-20 rounded-full bg-white/90 group-hover:bg-white flex items-center justify-center shadow-lg transition-all group-hover:scale-110">
+                    <svg class="w-7 h-7 md:w-8 md:h-8 text-text-primary ml-1" fill="currentColor" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+                  </div>
+                </div>
+                <div class="absolute bottom-4 right-4 px-3 py-1.5 rounded-lg bg-black/70 text-white text-xs font-medium flex items-center gap-1.5">
+                  <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/></svg>
+                  YouTubeで再生
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- 03 & 04 Grid -->
+        <div class="grid md:grid-cols-2 gap-6">
+          <!-- 03: DHBR AI検索 -->
+          <div class="bg-white rounded-xl shadow-sm border border-border-light p-7 md:p-8 hover:shadow-lg transition-shadow">
+            <div class="flex flex-wrap items-center gap-3 mb-4">
+              <span class="inline-flex items-center justify-center w-9 h-9 rounded-full bg-text-primary text-white text-sm font-bold">03</span>
+              <span class="px-3 py-1 rounded-full bg-gray-100 text-text-secondary text-xs font-bold tracking-wide">開発</span>
+              <span class="text-[13px] text-text-tertiary">2025</span>
+            </div>
+            <h4 class="font-bold text-text-primary mb-2">DHBR AI検索システム開発</h4>
+            <p class="text-[15px] text-text-secondary">DHBR記事の意味検索システムの開発を支援（&beta;テストまで参加）。</p>
+            <a href="https://dhbr.diamond.jp/articles/-/12309" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1.5 text-text-tertiary hover:text-brand-orange text-[15px] font-medium transition-colors">
+                発表ページ
+                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/></svg>
+            </a>
+        </div>
+
+          <!-- 04: 生成AIガイドライン -->
+          <div class="bg-white rounded-xl shadow-sm border border-border-light p-7 md:p-8 hover:shadow-lg transition-shadow">
+            <div class="flex flex-wrap items-center gap-3 mb-4">
+              <span class="inline-flex items-center justify-center w-9 h-9 rounded-full bg-text-primary text-white text-sm font-bold">04</span>
+              <span class="px-3 py-1 rounded-full bg-gray-100 text-text-secondary text-xs font-bold tracking-wide">組織</span>
+              <span class="text-[13px] text-text-tertiary">2024</span>
+            </div>
+            <h4 class="font-bold text-text-primary mb-2">生成AI活用ガイドライン策定</h4>
+            <p class="text-[15px] text-text-secondary">生成AI活用ガイドラインを策定し全社に展開。</p>
+          </div>
+        </div>
+
+        <!-- 05 & 06 Grid -->
+        <div class="grid md:grid-cols-2 gap-6">
+          <!-- 05: 業界天気図 -->
+          <div class="bg-white rounded-xl shadow-sm border border-border-light p-7 md:p-8 hover:shadow-lg transition-shadow">
+            <div class="flex flex-wrap items-center gap-3 mb-4">
+              <span class="inline-flex items-center justify-center w-9 h-9 rounded-full bg-text-primary text-white text-sm font-bold">05</span>
+              <span class="px-3 py-1 rounded-full bg-gray-100 text-text-secondary text-xs font-bold tracking-wide">データ可視化</span>
+              <span class="text-[13px] text-text-tertiary">2020 &mdash; 2025</span>
+            </div>
+            <h4 class="font-bold text-text-primary mb-2">データビジュアル重視の記事連載：「【月次版】業界天気図」</h4>
+            <p class="text-[15px] text-text-secondary mb-5">ダイヤモンド・オンライン上で、100社以上の月次業績データを集めて業界ごとにChart.jsで可視化、動的グラフの表示に挑んだ取り組み。当初は半年程度で終えるつもりが、人気連載となった。</p>
+            <a href="https://diamond.jp/category/p-industryweather" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1.5 text-brand-orange hover:text-brand-coral text-[15px] font-medium transition-colors">
+              記事を読む
+              <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/></svg>
+            </a>
+          </div>
+
+          <!-- 06: 教育環境力ランキング -->
+          <div class="bg-white rounded-xl shadow-sm border border-border-light p-7 md:p-8 hover:shadow-lg transition-shadow">
+            <div class="flex flex-wrap items-center gap-3 mb-4">
+              <span class="inline-flex items-center justify-center w-9 h-9 rounded-full bg-text-primary text-white text-sm font-bold">06</span>
+              <span class="px-3 py-1 rounded-full bg-gray-100 text-text-secondary text-xs font-bold tracking-wide">データ分析</span>
+              <span class="text-[13px] text-text-tertiary">2019</span>
+            </div>
+            <h4 class="font-bold text-text-primary mb-2">「東京・小学校区『教育環境力』ランキング」</h4>
+            <p class="text-[15px] text-text-secondary mb-5">小学校区別に学力に影響を与える要因を膨大なオープンデータから分析、ランキング。一般社団法人オープン＆ビッグデータ活用・地方創生推進機構（VLED）の勝手表彰（優秀賞）を受賞。</p>
+            <div class="flex flex-wrap gap-x-5 gap-y-2">
+              <a href="https://diamond.jp/list/feature/p-elementaryschool" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1.5 text-brand-orange hover:text-brand-coral text-[15px] font-medium transition-colors">
+                記事を読む
+                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/></svg>
+              </a>
+              <a href="https://www.vled.or.jp/archives/vled/news/2003/200318_001558.php.html" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1.5 text-text-tertiary hover:text-brand-orange text-[15px] font-medium transition-colors">
+                表彰ページ
+                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/></svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Profile ===== -->
+    <section id="career" class="py-4 md:py-6">
+      <p class="font-serif text-text-tertiary text-sm tracking-[0.2em] uppercase mb-2 reveal">Profile</p>
+      <h2 class="font-serif section-heading text-2xl md:text-3xl font-bold text-text-primary mb-12 reveal">経歴</h2>
+
+      <div class="grid md:grid-cols-2 gap-10">
+        <!-- Timeline -->
+        <div class="reveal">
+          <div class="timeline-line">
+            <div class="relative pb-8">
+              <div class="timeline-dot"></div>
+              <div class="text-[15px] font-bold text-brand-orange mb-1">2026年3月〜</div>
+              <h4 class="font-bold text-text-primary">株式会社エディトリアル・アンド 事業開始</h4>
+            </div>
+            <div class="relative pb-8">
+              <div class="timeline-dot"></div>
+              <div class="text-[15px] font-bold text-brand-orange mb-1">2025年7月〜現在</div>
+              <h4 class="font-bold text-text-primary">グローバルアストロラインズ株式会社</h4>
+              <p class="text-[15px] text-text-secondary mt-1">ディレクターオブラーニングイノベーション</p>
+              <p class="text-[15px] text-text-secondary mt-1">事業戦略立案、新規事業企画、教材・研修開発、ハーバード・ビジネス・パブリッシングとの提携等を推進</p>
+              <p class="text-[13px] text-text-tertiary mt-1">※2026年3月より業務委託契約に変更</p>
+            </div>
+            <div class="relative pb-8">
+              <div class="timeline-dot"></div>
+              <div class="text-[15px] font-bold text-brand-orange mb-1">2024年4月〜2025年3月</div>
+              <h4 class="font-bold text-text-primary">ダイヤモンド社 プラットフォーム推進室 プロダクト戦略部 部長</h4>
+              <p class="text-[15px] text-text-secondary mt-1">中長期デジタル戦略の立案、データ分析、AI案件の取りまとめ等</p>
+            </div>
+            <div class="relative pb-8">
+              <div class="timeline-dot"></div>
+              <div class="text-[15px] font-bold text-brand-orange mb-1">2024年4月〜2026年3月</div>
+              <h4 class="font-bold text-text-primary">上智大学大学院 応用データサイエンス学位プログラム（修士課程）</h4>
+              <p class="text-[15px] text-text-secondary mt-1">データサイエンスとAIの知見を社会・ビジネスにいかに実装できるかを探究。</p>
+            </div>
+            <div class="relative pb-8">
+              <div class="timeline-dot"></div>
+              <div class="text-[15px] font-bold text-brand-orange mb-1">2021年10月〜2024年3月</div>
+              <h4 class="font-bold text-text-primary">DIAMOND ハーバード・ビジネス・レビュー編集部 編集長</h4>
+              <p class="text-[15px] text-text-secondary mt-1">編集業務に加えて、デジタルサブスク事業（法人、個人）の立ち上げを実施</p>
+            </div>
+            <div class="relative pb-8">
+              <div class="timeline-dot"></div>
+              <div class="text-[15px] font-bold text-brand-orange mb-1">2018年4月〜2021年9月</div>
+              <h4 class="font-bold text-text-primary">DHBR編集部 副編集長 / ビジネスメディア局 副部長</h4>
+              <p class="text-[15px] text-text-secondary mt-1">編集業務に加えて、HBRの発行元であるハーバード・ビジネス・パブリッシングとの契約交渉やデジタルサブスク事業の推進等</p>
+            </div>
+            <div class="relative pb-8">
+              <div class="timeline-dot"></div>
+              <div class="text-[15px] font-bold text-brand-orange mb-1">2009年4月〜2018年3月</div>
+              <h4 class="font-bold text-text-primary">ダイヤモンド社 週刊ダイヤモンド編集部 記者</h4>
+              <p class="text-[15px] text-text-secondary mt-1">エネルギー、IT・通信、証券業界、データ分析を担当</p>
+            </div>
+            <div class="relative pb-8">
+              <div class="timeline-dot"></div>
+              <div class="text-[15px] font-bold text-brand-orange mb-1">2006年4月〜2009年3月</div>
+              <h4 class="font-bold text-text-primary">毎日新聞社 鳥取支局 記者</h4>
+              <p class="text-[15px] text-text-secondary mt-1">行政、政治、経済、事件・事故等を担当（1,500本以上の記事を執筆）</p>
+            </div>
+            <div class="relative pb-8">
+              <div class="timeline-dot"></div>
+              <div class="text-[15px] font-bold text-brand-orange mb-1">2002年4月〜2006年3月</div>
+              <h4 class="font-bold text-text-primary">早稲田大学 商学部</h4>
+              <p class="text-[15px] text-text-secondary mt-1">学士課程修了</p>
+            </div>
+            <div class="relative">
+              <div class="timeline-dot"></div>
+              <div class="text-[15px] font-bold text-brand-orange mb-1">2002年〜2006年3月</div>
+              <h4 class="font-bold text-text-primary">テレビ朝日「朝まで生テレビ！」</h4>
+              <p class="text-[15px] text-text-secondary mt-1">番組アルバイトスタッフとして番組制作に関わる。故・日下雄一プロデューサーに師事する。</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Qualifications Card -->
+        <div class="reveal">
+          <div class="bg-white p-7 rounded-xl shadow-sm border border-border-light space-y-6">
+            <h3 class="font-serif text-lg font-bold text-text-primary border-b border-border-light pb-3">資格・その他</h3>
+
+            <!-- Qualifications -->
+            <div>
+              <h4 class="text-xs font-bold text-text-tertiary mb-3 uppercase tracking-widest">資格</h4>
+              <div class="space-y-2.5 text-[15px]">
+                <div class="flex justify-between items-center"><span class="text-text-primary">E資格（JDLA）</span><span class="text-text-tertiary">2025年3月</span></div>
+                <div class="flex justify-between items-center"><span class="text-text-primary">個人情報保護士</span><span class="text-text-tertiary">2021年9月</span></div>
+                <div class="flex justify-between items-center"><span class="text-text-primary">統計検定2級</span><span class="text-text-tertiary">2016年9月</span></div>
+                <div class="flex justify-between items-center"><span class="text-text-primary">証券外務員1種</span><span class="text-text-tertiary">2016年2月</span></div>
+                <div class="flex justify-between items-center"><span class="text-text-primary">Oracle Java SE 7 Silver</span><span class="text-text-tertiary">2015年10月</span></div>
+              </div>
+            </div>
+
+            <!-- Programs -->
+            <div class="pt-5 border-t border-border-light">
+              <h4 class="text-xs font-bold text-text-tertiary mb-3 uppercase tracking-widest">修了プログラム</h4>
+              <p class="text-[15px] text-text-primary">松尾・岩澤研究室 LLM大規模言語モデル講座 2024</p>
+            </div>
+            
+            <!-- master -->
+            <div class="pt-5 border-t border-border-light">
+              <h4 class="text-xs font-bold text-text-tertiary mb-3 uppercase tracking-widest">学位</h4>
+              <p class="text-[15px] text-text-primary">応用データサイエンス修士（Master of Applied Data Science）</p>
+            </div>
+
+
+            <!-- Position -->
+            <div class="pt-5 border-t border-border-light">
+              <h4 class="text-xs font-bold text-text-tertiary mb-3 uppercase tracking-widest">役職・コミュニティ</h4>
+              <p class="text-[15px] text-text-primary mb-1">一般社団法人「<a href="https://mtgs88.jp/" target="_blank" rel="noopener noreferrer" class="text-brand-orange hover:text-brand-coral transition-colors underline underline-offset-2">世界標準の経営理論実践研究会</a>」理事（現職）</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Company + Contact ===== -->
+    <section class="grid md:grid-cols-2 gap-6 py-10 md:py-16 reveal">
+      <!-- Company Info -->
+      <div class="bg-white p-7 rounded-xl shadow-sm border border-border-light">
+        <h3 class="font-serif font-bold text-text-primary mb-6 pb-3 border-b border-border-light">会社概要</h3>
+        <dl class="space-y-4 text-[15px]">
+          <div class="flex flex-col sm:flex-row">
+            <dt class="w-28 font-bold text-text-tertiary flex-shrink-0">会社名</dt>
+            <dd class="text-text-primary">株式会社エディトリアル・アンド</dd>
+          </div>
+          <div class="flex flex-col sm:flex-row">
+            <dt class="w-28 font-bold text-text-tertiary flex-shrink-0">所在地</dt>
+            <dd class="text-text-primary">〒160-0023 東京都新宿区西新宿3-3-13 西新宿水間ビル6階</dd>
+          </div>
+          <div class="flex flex-col sm:flex-row">
+            <dt class="w-28 font-bold text-text-tertiary flex-shrink-0">代表者</dt>
+            <dd class="text-text-primary">代表取締役 小島 健志</dd>
+          </div>
+        </dl>
+      </div>
+
+      <!-- Contact Card -->
+      <div id="contact" class="bg-text-primary text-white p-7 rounded-xl shadow-md flex flex-col justify-center relative overflow-hidden">
+        <div class="absolute top-0 right-0 w-40 h-40 bg-brand-orange opacity-10 rounded-full -mr-12 -mt-12"></div>
+        <div class="absolute bottom-0 left-0 w-24 h-24 bg-brand-coral opacity-10 rounded-full -ml-8 -mb-8"></div>
+        <h3 class="font-serif text-xl font-bold mb-4 relative z-10">お問い合わせ</h3>
+        <p class="text-gray-300 text-[15px] mb-4 relative z-10 leading-relaxed">
+          ご相談・お問い合わせは、お気軽にご連絡ください。<br>
+          課題がまだ言語化できていない段階でも構いません。
+        </p>
+        <p class="font-serif text-white/90 text-[15px] italic mb-6 relative z-10 leading-relaxed">
+          「あの時の言葉で前に進むことができた」<br>
+          そう言っていただける瞬間のために。
+        </p>
+        <a href="https://forms.gle/nc3JF966YHNscRqu9" target="_blank" rel="noopener noreferrer" class="relative z-10 block w-full text-center py-3.5 rounded-xl bg-brand-orange text-white font-bold hover:bg-brand-coral transition-colors shadow-lg">
+          お問い合わせフォームへ
+        </a>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===== Footer ===== -->
+  <footer class="bg-[#1a1a1a] border-t border-white/10 py-12">
+    <div class="container mx-auto px-6 text-center">
+      <img src="image/Editorialand_logo_transparent.png" alt="Editorial &" class="h-20 mx-auto mb-4 opacity-90 brightness-0 invert">
+      <p class="font-bold text-white/80 text-[15px] mb-1">株式会社エディトリアル・アンド</p>
+      <p class="text-[15px] text-white/40">&copy; Editorial &amp; Inc. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+
+</body>
+</html>
